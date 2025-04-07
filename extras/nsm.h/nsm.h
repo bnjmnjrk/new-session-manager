@@ -488,10 +488,10 @@ NSM_EXPORT int _nsm_osc_open ( const char *path, const char *types, lo_arg **arg
 
     if ( r ) {
         if ( out_msg == NULL) {	
-    	  OSC_REPLY_ERR( r, "");
-    	else {
-    	  OSC_REPLY_ERR( r, out_msg);
-    	}
+            OSC_REPLY_ERR( r, "");
+        } else {
+            OSC_REPLY_ERR( r, out_msg);
+        }
     }
     else
         OSC_REPLY( "OK" );
@@ -520,10 +520,10 @@ NSM_EXPORT int _nsm_osc_save ( const char *path, const char *types, lo_arg **arg
 
     if ( r ) {
         if ( out_msg == NULL) {	
-    	  OSC_REPLY_ERR( r, "");
-    	else {
-    	  OSC_REPLY_ERR( r, out_msg);
-    	}
+            OSC_REPLY_ERR( r, "");
+        } else {
+            OSC_REPLY_ERR( r, out_msg);
+        }
     }
     else
         OSC_REPLY( "OK" );
